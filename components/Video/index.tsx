@@ -1,61 +1,58 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import SectionTitle from "../Common/SectionTitle";
 
-import ModalVideo from "react-modal-video";
-
 const Video = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000, // Adjust this for the desired autoplay speed in milliseconds
+    beforeChange: (current, next) => setCurrentSlide(next),
+  };
+
+  const images = [
+    { url: "/images/video/adria.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
+    { url: "/images/video/adria2.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
+    { url: "/images/video/adria3.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
+    { url: "/images/video/adria4.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
+
+    // Add more image URLs and descriptions as needed
+  ];
+  
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Team"
+          paragraph="Ovdje možete upoznati ljude koji stoje iza naše zajednice, naše osnivače i voditelje tima koji su strastveni prema kripto valutama i posvećeni ostvarivanju naše misije - edukacije i povezivanja kripto zajednice."
           center
           mb="80px"
         />
-
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4">
-            <div
-              className="wow fadeInUp mx-auto max-w-[770px] overflow-hidden rounded-md"
-              data-wow-delay=".15s"
-            >
-              <div className="relative aspect-[77/40] items-center justify-center">
-                <Image src="/images/video/video.jpg" alt="video image" fill />
-                <div className="absolute top-0 right-0 flex h-full w-full items-center justify-center">
-                  <button
-                    onClick={() => setOpen(true)}
-                    className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
-                  >
-                    <svg
-                      width="16"
-                      height="18"
-                      viewBox="0 0 16 18"
-                      className="fill-current"
-                    >
-                      <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z" />
-                    </svg>
-                  </button>
+        <div className="wow fadeInUp mx-auto max-w-[770px] overflow-hidden rounded-md">
+          <Slider {...settings} className="mb-5">
+            {images.map((image, index) => (
+              <div key={index} className="relative aspect-[77/40] items-center justify-center">
+                <div className="w-full h-full overflow-hidden">
+                  <img src={image.url} alt={image.description} className="object-cover w-full h-full" />
                 </div>
+                <p>{image.description}</p>
               </div>
-            </div>
-          </div>
+            ))}
+          </Slider>
         </div>
-      </div>
 
-      <ModalVideo
-        channel="youtube"
-        autoplay={true}
-        start={true}
-        isOpen={isOpen}
-        videoId="L61p2uyiMSo"
-        onClose={() => setOpen(false)}
-      />
+
+      </div>
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1]">
         <img src="/images/video/shape.svg" alt="shape" className="w-full" />

@@ -4,44 +4,45 @@ import Image from "next/image";
 const brandsData: Brand[] = [
   {
     id: 1,
-    name: "UIdeck",
-    href: "https://uideck.com",
-    image: "/images/brands/uideck.svg",
+    name: "CEX.ba",
+    href: "https://cex.ba",
+    image: "/images/brands/cexba.png",
   },
   {
     id: 2,
-    name: "Tailgrids",
-    href: "https://tailgrids.com",
-    image: "/images/brands/tailgrids.svg",
+    name: "RXCGAMES",
+    href: "https://rxcgames.com",
+    image: "/images/brands/rxcgames.svg",
   },
   {
     id: 3,
-    name: "Lineicons",
-    href: "https://lineicons.com",
-    image: "/images/brands/lineicons.svg",
+    name: "CryptoAdria",
+    href: "https://cryptoadria.com/konferencija/",
+    image: "/images/brands/ca-konferencija-dark-bg.svg",
   },
   {
     id: 4,
-    name: "GrayGrids",
-    href: "https://graygrids.com",
-    image: "/images/brands/graygrids.svg",
+    name: "RuxCrypto",
+    href: "https://rxc.crypto.ba/",
+    image: "/images/brands/rxclogo.webp",
   },
   {
     id: 5,
-    name: "TailAdmin",
-    href: "https://tailadmin.com",
-    image: "/images/brands/tailadmin.svg",
+    name: "Kripto.ba",
+    href: "https://kripto.ba/",
+    image: "/images/brands/kriptoba.svg",
   },
 ];
 
 const Brands = () => {
   return (
-    <section className="pt-16">
+    <section className="pt-16 mb-10">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div
-              className="wow fadeInUp flex flex-wrap items-center justify-center rounded-md bg-dark py-8 px-8 dark:bg-primary dark:bg-opacity-5 sm:px-10 md:py-[40px] md:px-[50px] xl:p-[50px] 2xl:py-[60px] 2xl:px-[70px]"
+             className="wow fadeInUp flex flex-wrap items-center justify-center rounded-md bg-opacity-52 bg-dark py-8 px-8 dark:bg-opacity-52 sm:px-10 md:py-[40px] md:px-[50px] xl:p-[50px] 2xl:py-[60px] 2xl:px-[70px]"
+
               data-wow-delay=".1s
               "
             >
@@ -62,7 +63,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { href, image, name } = brand;
 
   return (
-    <div className="mx-3 flex w-full max-w-[160px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[130px] xl:mx-6 xl:max-w-[150px] 2xl:mx-8 2xl:max-w-[160px]">
+    <div className="mx-3 flex w-full h-full max-w-[260px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[230px] xl:mx-6 xl:max-w-[110px] 2xl:mx-8 2xl:max-w-[160px]">
       <a
         href={href}
         target="_blank"

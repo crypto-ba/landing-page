@@ -11,8 +11,8 @@ const Features = () => {
       >
         <div className="container">
           <SectionTitle
-            title="Main Features"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title="Ekosistem"
+            paragraph="Naš ekosistem je usmjeren na podršku i rast kripto zajednice kroz edukaciju, siguran trgovački ambijent i kontinuiranu evoluciju usluga."
             center
           />
 
