@@ -6,26 +6,16 @@ const brandsData: Brand[] = [
     id: 1,
     name: "CEX.ba",
     href: "https://cex.ba",
-    image: "/images/brands/cexba.png",
+    image: "/images/brands/cexba.svg",
   },
-  {
-    id: 2,
-    name: "RXCGAMES",
-    href: "https://rxcgames.com",
-    image: "/images/brands/rxcgames.svg",
-  },
+
   {
     id: 3,
     name: "CryptoAdria",
     href: "https://cryptoadria.com/konferencija/",
     image: "/images/brands/ca-konferencija-dark-bg.svg",
   },
-  {
-    id: 4,
-    name: "RuxCrypto",
-    href: "https://rxc.crypto.ba/",
-    image: "/images/brands/rxclogo.webp",
-  },
+
   {
     id: 5,
     name: "Kripto.ba",
@@ -63,12 +53,12 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { href, image, name } = brand;
 
   return (
-    <div className="mx-3 flex w-full h-full max-w-[260px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[230px] xl:mx-6 xl:max-w-[110px] 2xl:mx-8 2xl:max-w-[160px]">
+    <div className="mx-3 flex w-full h-full sm:max-w-[20px] sm:max-h-[20px]  max-w-[260px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[230px] xl:mx-6 xl:max-w-[160px] 2xl:mx-8 2xl:max-w-[160px]">
       <a
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative h-10 w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
+        className="relative h-10 w-full max-w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
       >
         <Image src={image} alt={name} fill />
       </a>
