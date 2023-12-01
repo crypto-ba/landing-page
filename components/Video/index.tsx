@@ -16,15 +16,19 @@ const Video = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000, // Adjust this for the desired autoplay speed in milliseconds
+    autoplaySpeed: 5000, // Adjust this for the desired autoplay speed in milliseconds
     beforeChange: (current, next) => setCurrentSlide(next),
   };
 
   const images = [
-    { url: "/images/video/adria.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
-    { url: "/images/video/adria2.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
-    { url: "/images/video/adria3.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
-    { url: "/images/video/adria4.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
+    { url: "/images/video/arca2.webp", description: "Toni Dumančić - ARCA 2023 MEĐUNARODNA IZLOŽBA INOVACIJA  - ZLATNA MEDALJA" },
+
+    { url: "/images/video/adria.jpeg", description: "Nedžad Smajić - Cryptoadria 2023" },
+    // { url: "/images/video/adria2.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
+    // { url: "/images/video/arca2.webp", description: "Toni Dumančić - ARCA 2023  MEĐUNARODNA IZLOŽBA INOVACIJA - ZLATNA MEDALJA" },
+
+    // { url: "/images/video/adria3.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
+    // { url: "/images/video/adria4.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
 
     // Add more image URLs and descriptions as needed
   ];

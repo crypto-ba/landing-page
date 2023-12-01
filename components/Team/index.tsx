@@ -6,7 +6,7 @@ const testimonialData: Testimonial[] = [
   {
     id: 1,
     name: "Nedžad Smajić ",
-    designation: "Osnivač / CEO, CRYPTO.ba & RXCGames.com ",
+    designation: "Osnivač, CEX.ba  CRYPTO.ba  RXCGames.com",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/about/nedzad-smajic.jpg",
@@ -15,7 +15,7 @@ const testimonialData: Testimonial[] = [
   {
     id: 2,
     name: "Toni Dumancic",
-    designation: "CTO - CEX.ba  CRYPTO.ba  RXCGames.com ",
+    designation: "Suosnivač, CEX.ba  CRYPTO.ba  RXCGames.com",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/about/toni.jpeg",
