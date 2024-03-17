@@ -24,13 +24,13 @@ const Hero = () => {
                     href="https://cex.ba"
                     className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                   cex.ba
+                   CEX.ba
                   </Link>
                   <Link
                     href="https://rxcgames.com"
                     className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                   RXC Games
+                   RXCGames.com
                   </Link>
                   <Link
                     href="https://rxc.crypto.ba/"
@@ -38,12 +38,6 @@ const Hero = () => {
                   >
                    RXC Blockchain
                   </Link>
-                  <Link
-                    href="https://csc.crypto.ba/"
-                    className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                   Crypto.ba Smartchain
-                  </Link>                  
                 </div>
               </div>
             </div>
