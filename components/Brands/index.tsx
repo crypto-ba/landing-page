@@ -10,17 +10,23 @@ const brandsData: Brand[] = [
   },
 
   {
-    id: 3,
+    id: 2,
     name: "CryptoAdria",
     href: "https://cryptoadria.com/konferencija/",
     image: "/images/brands/ca-konferencija-dark-bg.svg",
   },
 
   {
-    id: 5,
+    id: 3,
     name: "Kripto.ba",
     href: "https://kripto.ba/",
     image: "/images/brands/kriptoba.svg",
+  },
+  {
+    id: 4,
+    name: "ACX.ba",
+    href: "https://acx.ba",
+    image: "/images/brands/acx.svg",
   },
 ];
 
