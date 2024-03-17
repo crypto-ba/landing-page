@@ -6,7 +6,7 @@ const testimonialData: Testimonial[] = [
   {
     id: 1,
     name: "Nedžad Smajić ",
-    designation: "Osnivač, CEX.ba  CRYPTO.ba  RXCGames.com",
+    designation: "Osnivač, cex.ba  crypto.ba  rxcgames.com",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/about/nedzad-smajic.jpg",
@@ -14,8 +14,8 @@ const testimonialData: Testimonial[] = [
   },
   {
     id: 2,
-    name: "Toni Dumancic",
-    designation: "Suosnivač, CEX.ba  CRYPTO.ba  RXCGames.com",
+    name: "Toni Dumančić",
+    designation: "Suosnivač, cex.ba  crypto.ba  rxcgames.com",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/about/toni.jpeg",
@@ -24,7 +24,7 @@ const testimonialData: Testimonial[] = [
   {
     id: 3,
     name: "Denis",
-    designation: "Zajednica",
+    designation: "Crypto.ba Novi Travnik",
     content:
       "Crypto.ba N.Travnik",
     image: "/images/about/levat.jpg",
@@ -33,7 +33,7 @@ const testimonialData: Testimonial[] = [
   {
     id: 3,
     name: "Tarik",
-    designation: "Zajednica",
+    designation: "Crypto.ba Tuzla",
     content:
       "Crypto.ba Tuzla",
     image: "/images/about/tarikarslanagic.jpg",
@@ -43,7 +43,7 @@ const testimonialData: Testimonial[] = [
   {
     id: 4,
     name: "Darko",
-    designation: "Zajednica",
+    designation: "Crypto.ba Doboj",
     content:
       "Crypto.ba ",
     image: "/images/about/darko.jpg",
