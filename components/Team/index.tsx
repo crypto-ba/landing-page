@@ -18,7 +18,7 @@ const testimonialData: Testimonial[] = [
     designation: "Suosnivač, cex.ba  crypto.ba  rxcgames.com",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/about/toni.jpeg",
+    image: "/images/about/toni1.jpg",
     star: 5,
   },
   {
