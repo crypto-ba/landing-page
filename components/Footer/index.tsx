@@ -93,7 +93,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://forum.crypto.ba"
+                      href="https://crypto.ba"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
