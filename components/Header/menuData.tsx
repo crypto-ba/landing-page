@@ -3,25 +3,25 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Home",
+    title: "Početna",
     path: "/",
     newTab: false,
   },
   {
     id: 2,
-    title: "CEX.ba",
-    path: "https://cex.ba",
+    title: "Zajednica",
+    path: "https://forum.crypto.ba",
     newTab: false,
   },
   {
     id: 3,
-    title: "RXCGAMES",
+    title: "WEB3",
     path: "https://rxcgames.com",
     newTab: false,
   },
   {
     id: 4,
-    title: "RuxCrypto",
+    title: "RXC Core",
     path: "https://rxc.crypto.ba",
     newTab: false,
   },
