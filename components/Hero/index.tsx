@@ -18,28 +18,32 @@ const Hero = () => {
                 Dobrodošli na Crypto.ba Platformu!
                 </h1>
                 <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-
-
-              Crypto.ba platforma, od 2016. forum za kriptovalute, postala je izvor za obrazovanje, kripto razmjenu, te razvoj RXC kriptovalute, RXCGAMES.com i CEX.ba projekta.                </p>
+                Od svog osnivanja u 2016. godini, platforma Crypto.ba je evoluirala iz foruma posvećenog kriptovalutama u sveobuhvatan izvor za obrazovanje o kriptovalutama, platformu za razmjenu istih, te razvojno središte za RXC kriptovalutu, RXCGAMES.com, i projekt CEX.ba.</p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="https://cex.ba"
                     className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                   CEX.ba
+                   cex.ba
                   </Link>
                   <Link
                     href="https://rxcgames.com"
                     className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                   RXCGAMES
+                   RXC Games
                   </Link>
                   <Link
                     href="https://rxc.crypto.ba/"
                     className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    RUXCRYPTO
+                   RXC Blockchain
                   </Link>
+                  <Link
+                    href="https://csc.crypto.ba/"
+                    className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                  >
+                   Crypto.ba Smartchain
+                  </Link>                  
                 </div>
               </div>
             </div>
