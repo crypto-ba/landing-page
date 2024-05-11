@@ -16,16 +16,19 @@ const Video = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000, // Adjust this for the desired autoplay speed in milliseconds
+    autoplaySpeed: 1200, // Adjust this for the desired autoplay speed in milliseconds
     beforeChange: (current, next) => setCurrentSlide(next),
   };
 
   const images = [
-    { url: "/images/video/arca2.webp", description: "Toni Dumančić - ARCA 2023 MEĐUNARODNA IZLOŽBA INOVACIJA  - ZLATNA MEDALJA" },
-
+    { url: "/images/video/podkast1.png", description: "Toni Dumančić - Cryptoadria Podcast" },
     { url: "/images/video/adria.jpeg", description: "Nedžad Smajić - Cryptoadria 2023" },
 
+    { url: "/images/video/arca2.webp", description: "Toni Dumančić - ARCA 2023 MEĐUNARODNA IZLOŽBA INOVACIJA  - ZLATNA MEDALJA" },
+
+
     { url: "/images/video/podcast.png", description: "Nedžad Smajić - Cryptoadria Podcast" },
+    { url: "/images/video/hakaton.jpeg", description: "Toni Dumančić - SUMIT HAKATON 2024" },
 
     // { url: "/images/video/adria2.jpeg", description: "Nedžad Smajić - Osnivač, CRYPTO.ba & RXCGames.com - Cryptoadria 2023" },
     // { url: "/images/video/arca2.webp", description: "Toni Dumančić - ARCA 2023  MEĐUNARODNA IZLOŽBA INOVACIJA - ZLATNA MEDALJA" },
@@ -46,9 +49,10 @@ const Video = () => {
           mb="80px"
         />
         <div className="wow fadeInUp mx-auto max-w-[770px] overflow-hidden rounded-md">
+          Par fotografija...
           <Slider {...settings} className="mb-5">
             {images.map((image, index) => (
-              <div key={index} className="relative aspect-[77/40] items-center justify-center">
+              <div key={index} className="relative aspect-[77/50] items-center justify-center">
                 <div className="w-full h-full overflow-hidden">
                   <img src={image.url} alt={image.description} className="object-cover w-full h-full" />
                 </div>

@@ -10,7 +10,7 @@ const menuData: Menu[] = [
   {
     id: 2,
     title: "Zajednica",
-    path: "https://forum.crypto.ba",
+    path: "https://crypto.ba",
     newTab: false,
   },
   {
